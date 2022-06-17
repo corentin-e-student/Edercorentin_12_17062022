@@ -1,5 +1,5 @@
 {
-  "name": "edercorentin_12_17022022",
+  "name": "edercorentin_12_17062022",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -11,7 +11,8 @@
     "react-dom": "^18.2.0",
     "react-query": "^3.39.1",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "yarn": "^1.22.19"
   },
   "scripts": {
     "start": "react-scripts start",
