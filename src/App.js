@@ -1,6 +1,5 @@
 import { QueryClient, QueryClientProvider } from 'react-query'
 import { ReactQueryDevtools } from 'react-query/devtools'
-import Test from "./Test";
 
 import './App.css';
 import Dashboard from './pages/Dashboard/Dashboard';
@@ -14,7 +13,6 @@ function App() {
         <ReactQueryDevtools initialIsOpen={false} />
         <div className='app_background_position'>
           <Dashboard/>
-          {/* <Test/> */}
         </div>
       </QueryClientProvider>
   );

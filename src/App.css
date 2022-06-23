@@ -1,3 +1,7 @@
 .app_background_position {
     height: 87.5vh;
 }
+
+.test_component_position {
+    margin-left: 150px;
+}
