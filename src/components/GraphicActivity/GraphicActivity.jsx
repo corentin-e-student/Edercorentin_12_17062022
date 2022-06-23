@@ -8,26 +8,18 @@ const GraphicActivity = () => {
 
     return (
 
-        <div>
+        <div className="graphic_activity_background">
+            <label className="graphic_activity_title">Activité quotidienne</label>
             {isSuccess &&
-                <div>
-                    <BarChart width={500} height={300} data={data} margin={{
-                            top: 5,
-                            right: 30,
-                            left: 20,
-                            bottom: 5
-                        }}
-                        className=""
-                        >
-                        <CartesianGrid vertical=""/>
-                        <XAxis dataKey="name" />
-                        <YAxis />
-                        <Tooltip />
-                        <Legend />
-                        <Bar dataKey="pv" fill="#8884d8" />
-                        <Bar dataKey="uv" fill="#82ca9d" />
-                        </BarChart>
-                </div>
+                <BarChart width={500} height={300} data={data}>
+                    <CartesianGrid vertical=""/>
+                    <XAxis dataKey="name" />
+                    <YAxis tickLine="" axisLine="" orientation="right"/>
+                    <Tooltip />
+                    <Legend verticalAlign="top" align="right" height= {80} />
+                    <Bar dataKey="kilogram" fill="#282D30" />
+                    <Bar dataKey="calories" fill="#E60000" />
+                </BarChart>
             }
 
         </div>

@@ -14,3 +14,13 @@
 .tracking_user_name {
     color: red;
 }
+
+.tracking_graphic_items_position_column {
+    display: flex;
+    flex-direction: column;
+}
+
+.tracking_graphic_items_position_row {
+    display: flex;
+    flex-direction: row;
+}

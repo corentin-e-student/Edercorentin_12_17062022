@@ -1,0 +1,16 @@
+.graphic_activity_background {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 50px;
+    padding: 10px;
+    background-color: rgb(249, 246, 246);
+}
+
+.graphic_activity_title {
+    position: absolute;
+    z-index: 1;
+    margin-top: 8px;
+    font-weight: 500;
+    font-size: 15px;
+}
