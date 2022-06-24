@@ -1,6 +1,7 @@
 .tracking__welcome_items_position {
     display: flex;
     flex-direction: column;
+    margin-top: 50px;
 
 }
 .tracking_title_welcome_bold {
@@ -23,4 +24,5 @@
 .tracking_graphic_items_position_row {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
