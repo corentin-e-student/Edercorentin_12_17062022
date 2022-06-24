@@ -4,7 +4,7 @@ import React from "react";
 import GraphicActivity from "../GraphicActivity/GraphicActivity";
 
 const TrackingActivity = () => {
-    const { data, isSuccess } = useUser()
+    const { data, isSuccess } = useUser('18')
 
     return (
 
@@ -17,13 +17,12 @@ const TrackingActivity = () => {
                     <label className="tracking_message">Félicitation ! Vous avez explosé vos objectifs hier 👏</label>
                     <div>
                         <div className="tracking_graphic_items_position_column">
-                            <GraphicActivity/>
+                            <GraphicActivity data={data} />
                             <div className="tracking_graphic_items_position_row">
-
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
             }
 
