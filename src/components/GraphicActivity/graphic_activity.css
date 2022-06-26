@@ -7,12 +7,52 @@
     border-radius: 10px;
     background-color: rgb(249, 246, 246);
     z-index: 1;
+    width: 100%;
 }
 
 .graphic_activity_title {
-    position: absolute;
-    z-index: 1;
     margin-top: 8px;
     font-weight: 500;
     font-size: 15px;
+}
+
+.graphic_activity_custom_tooltip {
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    color: white;
+    justify-content: center;
+    padding: 5px;
+    height: 60px;
+    border-radius: 5px;
+}
+
+.graphic_activity_custom_value_kilogram {
+    padding-bottom: 5px;
+}
+
+.graphic_activity_custom_value_calories {
+    padding-top: 5px;
+}
+
+/* Recharts custom */
+
+.recharts-wrapper {
+    width: 100%!important;
+}
+
+.recharts-surface {
+    width: 100%!important;
+}
+
+.recharts-default-legend {
+    display: flex!important;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.recharts-legend-item {
+    display: flex!important;
+    flex-direction: row;
+    width: 100px;
 }
