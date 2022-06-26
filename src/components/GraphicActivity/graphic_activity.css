@@ -7,7 +7,6 @@
     border-radius: 10px;
     background-color: rgb(249, 246, 246);
     z-index: 1;
-    width: 100%;
 }
 
 .graphic_activity_title {
@@ -38,7 +37,11 @@
 /* Recharts custom */
 
 .recharts-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%!important;
+    height: 100%!important;
 }
 
 .recharts-surface {

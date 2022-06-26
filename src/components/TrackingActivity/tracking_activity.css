@@ -19,6 +19,7 @@
 .tracking_graphic_items_position_column {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .tracking_graphic_items_position_row {

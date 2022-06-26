@@ -3,6 +3,7 @@ import "./tracking_activity.css"
 import React from "react";
 import GraphicActivity from "../GraphicActivity/GraphicActivity";
 import GraphicSession from "../GraphicSession/GraphicSession";
+import GraphicSkills from "../GraphicSkills/GraphicSkills";
 
 const TrackingActivity = () => {
     const { data, isSuccess } = useUser('18')
@@ -18,6 +19,7 @@ const TrackingActivity = () => {
                         <GraphicActivity />
                         <div className="tracking_graphic_items_position_row">
                             <GraphicSession/>
+                            <GraphicSkills/>
                         </div>
                     </div>
                 </div>

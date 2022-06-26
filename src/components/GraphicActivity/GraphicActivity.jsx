@@ -1,7 +1,7 @@
 import useUserActivity from "../../hooks/useUserActivity";
 import "./graphic_activity.css"
 import React from "react";
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer} from "recharts";
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend} from "recharts";
 
 const CustomTooltip = ({ payload, active }) => {
     if (active) {
@@ -25,8 +25,8 @@ const GraphicActivity = () => {
             <label className="graphic_activity_title">Activité quotidienne</label>
             <BarChart width={700} height={225} data={data?.data.sessions}>
                 <CartesianGrid strokeDasharray="4" vertical=""/>
-                <XAxis dataKey="session" tickLine=""/>
-                <YAxis tickLine="" axisLine="" orientation="right"/>
+                <XAxis dataKey="session" tickLine={false}/>
+                <YAxis tickLine={false} axisLine={false} orientation="right"/>
                 <Tooltip content={<CustomTooltip/>}/>
                 <Legend verticalAlign="top" align="right" height= {80} />
                 <Bar radius={[10, 10, 0, 0]} barSize={10} dataKey="kilogram" fill="#282D30" unit=" kg" />

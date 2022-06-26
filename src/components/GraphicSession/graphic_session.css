@@ -1,7 +1,7 @@
 .graphic_session_background {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     margin-top: 50px;
     padding: 20px;
@@ -20,4 +20,13 @@
     font-size: 15px;
     width: 100%;
     color: rgba(255, 255, 255, 0.681);
+}
+
+.graphic_session_custom_tooltip {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: white;
 }
