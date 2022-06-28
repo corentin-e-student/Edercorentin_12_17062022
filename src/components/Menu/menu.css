@@ -1,5 +1,7 @@
 .menu_background {
     height: 100%;
+    width: 100%;
+    position: fixed;
 }
 .menu_navbar_top_background {
     background-color: #000000;

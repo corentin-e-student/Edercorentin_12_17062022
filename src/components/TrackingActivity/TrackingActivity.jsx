@@ -4,6 +4,7 @@ import React from "react";
 import GraphicActivity from "../GraphicActivity/GraphicActivity";
 import GraphicSession from "../GraphicSession/GraphicSession";
 import GraphicSkills from "../GraphicSkills/GraphicSkills";
+import GraphicObjectif from "../GraphicObjectif/GraphicObjectif";
 
 const TrackingActivity = () => {
     const { data, isSuccess } = useUser('18')
@@ -20,6 +21,7 @@ const TrackingActivity = () => {
                         <div className="tracking_graphic_items_position_row">
                             <GraphicSession/>
                             <GraphicSkills/>
+                            <GraphicObjectif/>
                         </div>
                     </div>
                 </div>
