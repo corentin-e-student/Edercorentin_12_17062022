@@ -1,8 +1,10 @@
 .graphic_skills_background {
     background-color: rgba(72, 67, 67, 0.888);
-    width: 300px;
+    width: 258px;
+    height: 258px;
     margin-top: 50px;
     border-radius: 10px;
-    padding: 20px;
-    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

@@ -26,7 +26,6 @@ const TrackingActivity = () => {
                     </div>
                 </div>
             }
-
         </div>
     );
 }

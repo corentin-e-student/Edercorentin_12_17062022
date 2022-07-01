@@ -1,16 +1,13 @@
 .dashboard_background {
     height: 100%;
+    flex: 1 1 auto;
 }
 
 .dashboard_menu_component_position {
-    position: absolute;
-    z-index: 1;
     height: 100%;
     width: 100%;
 }
 
 .dashboard_user_components_position {
-    padding-left: 150px;
-    padding-top: 130px;
-    padding-right: 50px;
+
 }

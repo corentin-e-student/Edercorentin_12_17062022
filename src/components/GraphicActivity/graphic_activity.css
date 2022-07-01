@@ -6,7 +6,6 @@
     padding: 20px;
     border-radius: 10px;
     background-color: rgb(249, 246, 246);
-    z-index: 1;
 }
 
 .graphic_activity_title {
@@ -32,30 +31,4 @@
 
 .graphic_activity_custom_value_calories {
     padding-top: 5px;
-}
-
-/* Recharts custom */
-
-.recharts-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%!important;
-    height: 100%!important;
-}
-
-.recharts-surface {
-    width: 100%!important;
-}
-
-.recharts-default-legend {
-    display: flex!important;
-    flex-direction: row;
-    justify-content: flex-end;
-}
-
-.recharts-legend-item {
-    display: flex!important;
-    flex-direction: row;
-    width: 100px;
 }

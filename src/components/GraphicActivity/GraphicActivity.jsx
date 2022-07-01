@@ -21,8 +21,8 @@ const GraphicActivity = () => {
 
     return (
 
-        <div className="graphic_activity_background">
-            <label className="graphic_activity_title">Activité quotidienne</label>
+        <div className="">
+            <label className="">Activité quotidienne</label>
             <BarChart width={700} height={225} data={data?.data.sessions}>
                 <CartesianGrid strokeDasharray="4" vertical=""/>
                 <XAxis dataKey="session" tickLine={false}/>

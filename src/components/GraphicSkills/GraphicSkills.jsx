@@ -1,12 +1,15 @@
 import useUserSkills from "../../hooks/useUserSkills";
 import "./graphic_skills.css"
 import React from "react";
-import { Radar, RadarChart, PolarGrid, PolarAngleAxis} from 'recharts';
+import { Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, ResponsiveContainer } from 'recharts';
+
 
 const GraphicSkills = () => {
 
     const { data } = useUserSkills('18')
 
+
+    console.log(data)
     const numberSkill = data?.data.kind
 
     const skillsName = {
@@ -18,16 +21,17 @@ const GraphicSkills = () => {
         6: "Intensité",
     }
 
+    if(!data?.data) return null
 
     return (
 
         <div className="graphic_skills_background">
-            <RadarChart outerRadius={150} width={500} height={250}>
+            <RadarChart width={240} height={240}>
                 <PolarGrid radialLines={false}/>
                 <PolarAngleAxis axisLine={false} tickLine={false} dataKey="kind" data={data?.data.kind} />
                 <Radar name="Mike" fill="#ff0000" fillOpacity={0.6} data={data?.data.data} dataKey="value" />
             </RadarChart>
-    </div>
+        </div>
     );
 }
 
