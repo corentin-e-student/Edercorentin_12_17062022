@@ -21,18 +21,20 @@ const GraphicActivity = () => {
 
     return (
 
-        <div className="">
-            <label className="">Activité quotidienne</label>
-            <BarChart width={700} height={225} data={data?.data.sessions}>
-                <CartesianGrid strokeDasharray="4" vertical=""/>
-                <XAxis dataKey="session" tickLine={false}/>
-                <YAxis tickLine={false} axisLine={false} orientation="right"/>
-                <Tooltip content={<CustomTooltip/>}/>
-                <Legend verticalAlign="top" align="right" height= {80} />
-                <Bar radius={[10, 10, 0, 0]} barSize={10} dataKey="kilogram" fill="#282D30" unit=" kg" />
-                <Bar radius={[10, 10, 0, 0]} barSize={10} dataKey="calories" fill="#E60000" unit=" kCal" />
-            </BarChart>
-    </div>
+      <div className="graphic_activity_background">
+        <label className="graphic_activity_title">Activité quotidienne</label>
+        <div className="graphic_activity_position">
+          <BarChart width={780} height={320} data={data?.data.sessions}>
+            <CartesianGrid strokeDasharray="2" vertical={false}/>
+            <XAxis dataKey="session" tickLine={false}/>
+            <YAxis tickCount={3} tickLine={false} axisLine={false} orientation="right"/>
+            <Tooltip content={<CustomTooltip/>}/>
+            <Legend verticalAlign="top" align="right" height= {80} />
+            <Bar radius={[10, 10, 0, 0]} barSize={10} dataKey="kilogram" fill="#282D30" unit=" kg" />
+            <Bar radius={[10, 10, 0, 0]} barSize={10} dataKey="calories" fill="#E60000" unit=" kCal" />
+          </BarChart>
+        </div>
+      </div>
     );
 }
 

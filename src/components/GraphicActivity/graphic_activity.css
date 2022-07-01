@@ -1,17 +1,21 @@
 .graphic_activity_background {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin-top: 50px;
     padding: 20px;
     border-radius: 10px;
     background-color: rgb(249, 246, 246);
+    margin-top: 50px;
 }
 
 .graphic_activity_title {
     margin-top: 8px;
     font-weight: 500;
     font-size: 15px;
+    position: absolute;
+}
+
+.graphic_activity_position {
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
 .graphic_activity_custom_tooltip {

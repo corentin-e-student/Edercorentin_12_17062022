@@ -31,8 +31,8 @@ const GraphicSession = () => {
 
         <div className="graphic_session_background">
             <label className="graphic_session_title">Durée moyenne des sessions</label>
-            <LineChart width={200} height={150} data={data?.data.sessions}>
-                <CartesianGrid vertical="" horizontal="" />
+            <LineChart width={270} height={270} data={data?.data.sessions}>
+                <CartesianGrid vertical={false} horizontal={false} />
                 <XAxis dataKey="day"  tickLine={false} axisLine={false} stroke="rgba(255, 255, 255, 0.681)" />
                 <YAxis hide="true" tickLine={false} axisLine={false} />
                 <Tooltip content={<CustomTooltip/>} />

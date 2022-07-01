@@ -1,5 +1,5 @@
 import './dashboard.css'
-import { Menu, TrackingActivity } from "../../components";
+import { TrackingActivity } from "../../components";
 import React from "react";
 
 function Dashboard () {

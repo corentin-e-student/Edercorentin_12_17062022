@@ -1,8 +1,7 @@
 .graphic_objectif_background {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    width: 300px!important;
+    width: 258px;
     margin-top: 50px;
     padding: 20px;
     border-radius: 10px;
@@ -13,4 +12,37 @@
     margin-top: 8px;
     font-weight: 500;
     font-size: 15px;
+}
+
+
+.progress-label {
+    font-weight: 700;
+}
+
+.graphic_objectif_bubble_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: white;
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 30px;
+}
+
+.bubble_info_scoring {
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.bubble_info_text {
+    text-align: center;
+    width: 100px;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(170, 164, 164);
 }

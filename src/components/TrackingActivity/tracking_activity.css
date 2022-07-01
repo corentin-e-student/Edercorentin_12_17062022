@@ -1,14 +1,12 @@
 .tracking__welcome_items_position {
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
-    flex-wrap: wrap;
+    padding: 50px;
 
 }
 .tracking_title_welcome_bold {
     font-size: 35px;
     font-weight: 650;
-    margin-top: 30px;
 }
 .tracking_message {
     margin-top: 25px;
@@ -27,5 +25,6 @@
 .tracking_graphic_items_position_row {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
