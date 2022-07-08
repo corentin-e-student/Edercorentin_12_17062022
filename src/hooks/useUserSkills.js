@@ -9,5 +9,21 @@ const getUserSkills = async (userId) => {
 }
 
 export default function useUserActivity(idUser) {
-    return useQuery(['userSKills'], () => getUserSkills(idUser))
+    return useQuery(['userSKills'], () => getUserSkills(idUser),
+
+        {
+            select: data => {
+
+                const formatedData = data.data.data.map(skill => (
+                    {
+                        value: skill.value,
+                        kind: data.data.kind[skill.kind]
+                    }
+                ))
+
+                return {
+                    data: formatedData
+                }
+            }
+        })
 }
