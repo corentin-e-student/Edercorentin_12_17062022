@@ -25,7 +25,7 @@ return (
 
 const GraphicSession = () => {
 
-    const { data } = useUserSession('18')
+    const { data } = useUserSession('12')
 
     return (
 

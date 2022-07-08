@@ -8,7 +8,7 @@ import GraphicObjectif from "../GraphicObjectif/GraphicObjectif";
 import ScoringEnergyCard from "../ScoringEnergyCard/ScoringEnergyCard";
 
 const TrackingActivity = () => {
-    const { data, isSuccess } = useUser('18')
+    const { data, isSuccess } = useUser('12')
     console.log(data)
     return (
 
@@ -27,9 +27,10 @@ const TrackingActivity = () => {
                             </div>
                         </div>
                         <div className="tracking_scoring_items_position">
-                            {/* {data.data.keyDatas.map(keyData => ( */}
-                                <ScoringEnergyCard energyName="Calories" energyValue={data.data.keyData.calorieCount}/>
-                            {/* ))} */}
+                            <ScoringEnergyCard energyName="Calories" energyValue={data.data.keyData.calorieCount}/>
+                            <ScoringEnergyCard energyName="Proteines" energyValue={data.data.keyData.proteinCount}/>
+                            <ScoringEnergyCard energyName="Glucides" energyValue={data.data.keyData.carbohydrateCount}/>
+                            <ScoringEnergyCard energyName="Lipides" energyValue={data.data.keyData.lipidCount}/>
                         </div>
                     </div>
                 </div>

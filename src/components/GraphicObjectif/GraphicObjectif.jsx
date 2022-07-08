@@ -5,7 +5,7 @@ import { RadialBarChart, RadialBar, PolarAngleAxis} from 'recharts';
 
 const GraphicObjectif = () => {
 
-    const { data } = useUser('18')
+    const { data } = useUser('12')
 
     const valueScoring = data?.data.userInfos.score;
     const scoreCalc = valueScoring * 100;

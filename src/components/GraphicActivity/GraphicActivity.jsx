@@ -17,7 +17,7 @@ const CustomTooltip = ({ payload, active }) => {
 
 const GraphicActivity = () => {
 
-    const { data } = useUserActivity('18')
+    const { data } = useUserActivity('12')
 
     return (
 

@@ -18,3 +18,14 @@
     display: flex;
     flex-direction: column;
 }
+
+.scoring_energy_value {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.scoring_energy_name {
+    color: grey;
+    font-size: 14px;
+    font-weight: 500;
+}
