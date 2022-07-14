@@ -9,7 +9,6 @@ import ScoringEnergyCard from "../ScoringEnergyCard/ScoringEnergyCard";
 
 const TrackingActivity = () => {
     const { data, isSuccess } = useUser('12')
-    console.log(data)
     return (
 
         <div>

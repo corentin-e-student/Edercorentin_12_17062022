@@ -42,3 +42,24 @@
     justify-content: space-between;
     width: 25%;
 }
+
+@media only screen and (max-width: 1100px) {
+    .tracking_items_position {
+        flex-direction: column;
+    }
+
+    .tracking_scoring_items_position {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 20px;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 930px) {
+    .tracking_scoring_items_position {
+        flex-wrap: wrap;
+        margin-top: 0px;
+        width: 80%;
+    }
+}

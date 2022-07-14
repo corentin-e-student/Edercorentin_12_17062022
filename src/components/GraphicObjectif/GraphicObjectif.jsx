@@ -9,7 +9,6 @@ const GraphicObjectif = () => {
 
     const valueScoring = data?.data.userInfos.score;
     const scoreCalc = valueScoring * 100;
-    console.log(scoreCalc)
 
     const getValueScoring = [
         { value: scoreCalc }
