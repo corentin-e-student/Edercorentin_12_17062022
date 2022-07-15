@@ -1,7 +1,7 @@
 .tracking__welcome_items_position {
     display: flex;
     flex-direction: column;
-    padding: 50px;
+    padding: 16px;
 
 }
 .tracking_title_welcome_bold {
@@ -19,7 +19,7 @@
 .tracking_items_position {
     display: flex;
     flex-direction: row;
-    margin-top: 50px;
+    margin-top: 12px;
 }
 
 .tracking_graphic_items_position_column {
