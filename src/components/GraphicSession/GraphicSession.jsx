@@ -2,6 +2,7 @@ import useUserSession from "../../hooks/useUserSession";
 import "./graphic_session.css"
 import React from "react";
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Dot} from "recharts";
+import PropTypes from 'prop-types';
 
 const CustomTooltip = ({ active, payload }) => {
     if (active && payload && payload.length > 0) {
@@ -43,3 +44,8 @@ const GraphicSession = () => {
 }
 
 export default GraphicSession;
+
+CustomTooltip.propTypes = {
+  payload: PropTypes.array,
+  active: PropTypes.bool
+}

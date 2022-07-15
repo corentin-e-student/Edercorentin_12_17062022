@@ -2,6 +2,7 @@ import useUser from "../../hooks/useUser";
 import "./graphic_objectif.css"
 import React from "react";
 import { RadialBarChart, RadialBar, PolarAngleAxis} from 'recharts';
+import PropTypes from 'prop-types';
 
 const GraphicObjectif = () => {
 
@@ -44,18 +45,14 @@ const GraphicObjectif = () => {
                 fill="#ff0000"
                 cornerRadius={10}
                 />
-                {/* <text
-                textAnchor="middle"
-                dominantBaseline="middle"
-                x={129}
-                y={129}
-                className="progress-label"
-                >
-                    {scoreCalc} %
-                </text> */}
             </RadialBarChart>
         </div>
     );
 }
 
 export default GraphicObjectif;
+
+GraphicObjectif.propTypes = {
+    getValueScoring: PropTypes.number,
+    valueScoring: PropTypes.array,
+}

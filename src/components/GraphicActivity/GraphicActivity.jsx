@@ -2,6 +2,7 @@ import useUserActivity from "../../hooks/useUserActivity";
 import "./graphic_activity.css"
 import React from "react";
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend} from "recharts";
+import PropTypes from 'prop-types';
 
 const CustomTooltip = ({ payload, active }) => {
     if (active) {
@@ -39,3 +40,8 @@ const GraphicActivity = () => {
 }
 
 export default GraphicActivity;
+
+CustomTooltip.propTypes = {
+  payload: PropTypes.array,
+  active: PropTypes.bool
+}

@@ -1,4 +1,5 @@
 import './button_activity.css'
+/* import PropTypes from 'prop-types'; */
 
 const ButtonActivity = ({icon_name, icon_alt}) => (
     <div className='button-activity_background'>
@@ -7,3 +8,7 @@ const ButtonActivity = ({icon_name, icon_alt}) => (
 );
 
 export default ButtonActivity;
+
+/* ButtonActivity.propTypes = {
+    src: icon_name.['source'],
+  } */

@@ -1,6 +1,7 @@
 /* import useUser from "../../hooks/useUser"; */
 import "./scoring_energy_card.css"
 import React from "react";
+import PropTypes from 'prop-types';
 
 const ScoringEnergyCard = ({energyName, energyValue}) => {
 
@@ -54,3 +55,5 @@ const ScoringEnergyCard = ({energyName, energyValue}) => {
 };
 
 export default ScoringEnergyCard;
+
+ScoringEnergyCard.propTypes = {  energyValue: PropTypes.number};

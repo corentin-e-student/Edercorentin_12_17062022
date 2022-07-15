@@ -6,6 +6,7 @@ import GraphicSession from "../GraphicSession/GraphicSession";
 import GraphicSkills from "../GraphicSkills/GraphicSkills";
 import GraphicObjectif from "../GraphicObjectif/GraphicObjectif";
 import ScoringEnergyCard from "../ScoringEnergyCard/ScoringEnergyCard";
+import PropTypes from 'prop-types';
 
 const TrackingActivity = () => {
     const { data, isSuccess } = useUser('12')
@@ -39,3 +40,5 @@ const TrackingActivity = () => {
 }
 
 export default TrackingActivity;
+
+TrackingActivity.propTypes = {  energyName: PropTypes.string};
