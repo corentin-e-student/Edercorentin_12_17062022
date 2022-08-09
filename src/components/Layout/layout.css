@@ -60,13 +60,13 @@
 @media only screen and (min-width: 1400px) {
     .layoutContent {
         display: flex;
-        height: 100%;
+        height: calc(100vh - 91px);
     }
 }
 
 @media only screen and (max-width: 1400px) {
     .layout {
-        height: 110vh;
+        height: 100vh;
     }
 }
 
