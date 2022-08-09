@@ -19,3 +19,5 @@ const GraphicSkills = () => {
 }
 
 export default GraphicSkills;
+
+/* GraphicSkills.propTypes = {  energyName: PropTypes.string}; */

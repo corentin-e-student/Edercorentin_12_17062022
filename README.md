@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+# Project 12 - Front-end Sportee Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repo contains all the source code to run the micro API for the sports analytics dashboard SportSee.
 
-## Available Scripts
+**1. General information**
 
-In the project directory, you can run:
+To start this project, you are free to use Docker or not. In this documentation, we will see several methods to launch the project easily.
 
-### `npm start`
+**2. Prerequisites**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+I advise : 
+- [Yarn](https://yarnpkg.com/) for more zease of use
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Or :
+- [NodeJS (**version 12.18**)](https://nodejs.org/en/) but be careful you need to change the version of NodJS to "12.18". Actualy the last version of NodJS is "16.16". If you are working with several versions of NodeJS, we recommend you install [nvm](https://github.com/nvm-sh/nvm). However this tool is not optimized I find.
 
-### `npm test`
+- Fork the repository
+- Clone it on your computer.
+- The `yarn` command will allow you to install the dependencies.
+- The `yarn dev` command will allow you to run the micro API.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**3. Prepared the project**
 
-### `npm run build`
+**3.1 Download project**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Download or clone front-end's repository : 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+git clone https://github.com/corentin-e/Edercorentin_12_17062022
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Download or clone back-end's repository : 
 
-### `npm run eject`
+git clone https://github.com/corentin-e/P12_back
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**3.1 Launch project**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
