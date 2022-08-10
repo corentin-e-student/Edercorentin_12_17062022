@@ -41,4 +41,7 @@ const TrackingActivity = () => {
 
 export default TrackingActivity;
 
-TrackingActivity.propTypes = {  energyName: PropTypes.string};
+TrackingActivity.propTypes = {  
+    energyValue: PropTypes.number,
+    energyName: PropTypes.string,
+};

@@ -18,6 +18,9 @@ const GraphicSkills = () => {
     );
 }
 
+/* GraphicSkills.propTypes = {  
+    dataArray: propTypes.array,
+};  */
+
 export default GraphicSkills;
 
-/* GraphicSkills.propTypes = {  energyName: PropTypes.string}; */

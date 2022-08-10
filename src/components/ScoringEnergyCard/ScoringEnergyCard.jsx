@@ -56,4 +56,7 @@ const ScoringEnergyCard = ({energyName, energyValue}) => {
 
 export default ScoringEnergyCard;
 
-ScoringEnergyCard.propTypes = {  energyValue: PropTypes.number};
+ScoringEnergyCard.propTypes = { 
+    energyValue: PropTypes.number,
+    energyName: PropTypes.string,
+};
