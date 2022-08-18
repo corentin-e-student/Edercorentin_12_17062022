@@ -32,11 +32,13 @@ Or :
 
     # NPM : npm install
 
+
     # Yarn : yarn install
 
 > Install front-end's dependencies : 
 
     # NPM : npm install
+
 
     # Yarn : yarn install
 
@@ -46,10 +48,12 @@ Or :
 
     # NPM : npm run dev
 
+
     # Yarn : yarn run dev
 
 > Launch front-end's dependencies : 
 
     # NPM : npm start
+    
 
     # Yarn : yarn start

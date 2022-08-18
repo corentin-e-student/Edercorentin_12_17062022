@@ -19,6 +19,10 @@
     flex-direction: column;
 }
 
+.scoring_energy_icon {
+    width: 20px;
+}
+
 .scoring_energy_value {
     font-size: 20px;
     font-weight: 700;
@@ -33,5 +37,7 @@
 @media only screen and (max-width: 930px) {
     .scoring_energy_card_background {
         margin-top: 20px;
+        width: 100%;
+        justify-content: space-between;
     }
 }

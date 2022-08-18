@@ -2,6 +2,10 @@
 import "./scoring_energy_card.css"
 import React from "react";
 import PropTypes from 'prop-types';
+import Fire from '../../asset/icons/calorie-icon.svg'
+import Chicken from '../../asset/icons/proteine-icon.svg'
+import Apple from '../../asset/icons/glucide-icon.svg'
+import Burger from '../../asset/icons/lipide-icon.svg'
 
 const ScoringEnergyCard = ({energyName, energyValue}) => {
 
@@ -29,22 +33,22 @@ const ScoringEnergyCard = ({energyName, energyValue}) => {
         }
     }
     
-    /* const iconType = (energyName) => {
+    const iconType = (energyName) => {
         if(energyName === "Calories") {
-            return <FontAwesomeIcon icon="fa-solid fa-fire-flame-curved" style={{fill:"#FF0000"}} />
+            return Fire
         } else if (energyName === "Proteines") {
-            return <FontAwesomeIcon icon="fa-solid fa-drumstick" style={{fill:"#4AB8FF"}} />
+            return Chicken
         } else if (energyName === "Glucides") {
-            return <FontAwesomeIcon icon="fa-solid fa-apple-whole" style={{fill:"#FDCC0C"}} />
+            return Apple
         } else if (energyName === "Lipides") {
-            return <FontAwesomeIcon icon="fa-solid fa-burger" style={{fill:"#FD5181"}} />
+            return Burger
         }
-    } */
+    }
 
     return (
         <div className="scoring_energy_card_background">
             <div className="scoring_energy_card_background_icon" style={{backgroundColor: backgrounColorType(energyName)}}>
-                W
+                <img src={iconType(energyName)} alt="logo Sportsee" className='scoring_energy_icon' />
             </div>
             <div className="scoring_energy_scoring_items_position">
                 <label className="scoring_energy_value">{energyValue} {unitType(energyName)}</label>

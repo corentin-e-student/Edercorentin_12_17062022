@@ -60,6 +60,13 @@
     .tracking_scoring_items_position {
         flex-wrap: wrap;
         margin-top: 0px;
-        width: 80%;
+        width: 100%;
+    }
+
+    .tracking_graphic_items_position_column {
+        display: flex;
+        flex-direction: column;
+        margin-right: 30px;
+        width: 100%;
     }
 }

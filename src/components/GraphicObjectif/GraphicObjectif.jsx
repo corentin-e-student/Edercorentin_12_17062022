@@ -8,7 +8,7 @@ const GraphicObjectif = () => {
 
     const { data } = useUser('12')
 
-    const valueScoring = data?.data.userInfos.score;
+    const valueScoring = data?.data.userInfos.todayScore;
     const scoreCalc = valueScoring * 100;
     
 
