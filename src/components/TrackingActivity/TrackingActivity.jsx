@@ -8,6 +8,12 @@ import GraphicObjectif from "../GraphicObjectif/GraphicObjectif";
 import ScoringEnergyCard from "../ScoringEnergyCard/ScoringEnergyCard";
 import PropTypes from 'prop-types';
 
+/**
+ * Represents dashboard tracking activity.
+ * @param {array} data - Array of user information.
+ * @returns {JSX}
+ */
+
 const TrackingActivity = () => {
     const { data, isSuccess } = useUser('12')
     return (

@@ -4,6 +4,16 @@ import React from "react";
 import { RadialBarChart, RadialBar, PolarAngleAxis} from 'recharts';
 import PropTypes from 'prop-types';
 
+/**
+ * Represents graphic objectif.
+ * @param {array} data - Array of objectif element.
+ * @param {number} valueScoring - Score of objectif.
+ * @param {number} scoreCalc - Score in percent.
+ * @param {number} getValueScoring - Display of score in percent.
+ * @param {number} value - Value of score for radial bar.
+ * @returns {JSX}
+ */
+
 const GraphicObjectif = () => {
 
     const { data } = useUser('12')
@@ -54,6 +64,6 @@ const GraphicObjectif = () => {
 export default GraphicObjectif;
 
 GraphicObjectif.propTypes = {
+    scoreCalc: PropTypes.number,
     getValueScoring: PropTypes.number,
-    valueScoring: PropTypes.array,
 }

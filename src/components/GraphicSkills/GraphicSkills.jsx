@@ -2,6 +2,16 @@ import useUserSkills from "../../hooks/useUserSkills";
 import "./graphic_skills.css"
 import React from "react";
 import { Radar, RadarChart, PolarGrid, PolarAngleAxis} from 'recharts';
+import PropTypes from 'prop-types';
+
+
+/**
+ * Represents graphic skills.
+ * @param {array} data - Array of user skills.
+ * @param {number} data.value - Values skills.
+ * @param {string} data.kind - Skills names.
+ * @returns {JSX}
+ */
 
 
 const GraphicSkills = () => {
@@ -23,4 +33,13 @@ const GraphicSkills = () => {
 };  */
 
 export default GraphicSkills;
+
+GraphicSkills.prototype = {
+    data: PropTypes.arrayOf(
+      PropTypes.shape({
+        kind: PropTypes.number,
+        value: PropTypes.number,
+      })
+    ).isRequired,
+  }
 

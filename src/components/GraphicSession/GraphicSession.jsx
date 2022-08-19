@@ -4,6 +4,14 @@ import React from "react";
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Dot} from "recharts";
 import PropTypes from 'prop-types';
 
+/**
+ * Represents graphic session.
+ * @param {array} data - Array of sessions times.
+ * @param {number} data.sessionLength - Time of session.
+ * @param {string} data.day - Day's initial.
+ * @returns {JSX}
+ */
+
 const CustomTooltip = ({ active, payload }) => {
     if (active && payload && payload.length > 0) {
       return (
@@ -39,7 +47,7 @@ const GraphicSession = () => {
                 <Tooltip content={<CustomTooltip/>} />
                 <Line strokeWidth="2"  strokeOpacity="0.8" isAnimationActive={true} type="monotone" dataKey="sessionLength" stroke="#FFFFFF" dot={false} activeDot={<CustomDots/>} />
             </LineChart>
-    </div>
+        </div>
     );
 }
 
@@ -47,5 +55,14 @@ export default GraphicSession;
 
 CustomTooltip.propTypes = {
   payload: PropTypes.array,
-  active: PropTypes.bool
+  active: PropTypes.bool,
+}
+
+GraphicSession.prototype = {
+  data: PropTypes.arrayOf(
+    PropTypes.shape({
+      day: PropTypes.number,
+      sessionLength: PropTypes.number,
+    })
+  ).isRequired,
 }

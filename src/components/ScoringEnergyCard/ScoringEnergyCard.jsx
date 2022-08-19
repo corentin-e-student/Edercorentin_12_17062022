@@ -7,6 +7,13 @@ import Chicken from '../../asset/icons/proteine-icon.svg'
 import Apple from '../../asset/icons/glucide-icon.svg'
 import Burger from '../../asset/icons/lipide-icon.svg'
 
+/**
+ * Represents card of energies used.
+ * @param {string} energyName - Name's energy.
+ * @param {number} energyValue - Value's energy.
+ * @returns {JSX}
+ */
+
 const ScoringEnergyCard = ({energyName, energyValue}) => {
 
     const backgrounColorType = (energyName) => {

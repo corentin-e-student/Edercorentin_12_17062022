@@ -4,8 +4,15 @@ import YogaIcon from '../../asset/icons/zen.png'
 import SwimIcon from '../../asset/icons/swim.png'
 import BycicleIcon from '../../asset/icons/bicycle.png'
 import GymIcon from '../../asset/icons/gym.png'
+import PropTypes from 'prop-types';
 
 import './layout.css'
+
+/**
+ * Represents graphic skills.
+ * @param {Object} children - TrakingActivity of dashboard.
+ * @returns {JSX}
+ */
 
 const Layout = ({children}) => (
     <div className="layout">
@@ -33,3 +40,8 @@ const Layout = ({children}) => (
 )
 
 export default Layout
+
+Layout.prototype = {
+    icon_name: PropTypes.string,
+    src: PropTypes.string,
+  }
