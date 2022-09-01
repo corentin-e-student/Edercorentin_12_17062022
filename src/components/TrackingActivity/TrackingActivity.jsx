@@ -14,10 +14,10 @@ import PropTypes from 'prop-types';
  * @returns {JSX}
  */
 
-const TrackingActivity = () => {
+const TrackingActivity = ({userId}) => {
+
     const { data, isSuccess } = useUser('12')
     return (
-
         <div>
             {isSuccess &&
                 <div className="tracking__welcome_items_position">
@@ -25,7 +25,7 @@ const TrackingActivity = () => {
                     <label className="tracking_message">Félicitation ! Vous avez explosé vos objectifs hier 👏</label>
                     <div className="tracking_items_position">
                         <div className="tracking_graphic_items_position_column">
-                            <GraphicActivity />
+                            <GraphicActivity/>
                             <div className="tracking_graphic_items_position_row">
                                 <GraphicSession/>
                                 <GraphicSkills/>
