@@ -16,7 +16,7 @@ function Dashboard () {
     return (
     <div className='dashboard_background'>
         <div className='dashboard_user_components_position'>
-            <select value={userId} onChange={handleChangeUserType}>
+            <select value={userId} onChange={handleChangeUserType} className="dashboard-user_id_selector">
                 {options.flatMap(option =>
                     <option key={option.value} value={option.value}>{option.text}</option>
                 )}
