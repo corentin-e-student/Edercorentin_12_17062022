@@ -14,8 +14,8 @@ import PropTypes from 'prop-types';
  */
 
 
-const GraphicSkills = () => {
-    const { data } = useUserSkills('12')
+const GraphicSkills = ({userId}) => {
+    const { data } = useUserSkills(userId)
 
     return (
         <div className="graphic_skills_background">

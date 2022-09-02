@@ -14,9 +14,9 @@ import PropTypes from 'prop-types';
  * @returns {JSX}
  */
 
-const GraphicObjectif = () => {
+const GraphicObjectif = ({userId}) => {
 
-    const { data } = useUser('12')
+    const { data } = useUser(userId)
 
     const valueScoring = data?.data.userInfos.todayScore;
     const scoreCalc = valueScoring * 100;

@@ -32,9 +32,9 @@ return (
 )
 }
 
-const GraphicSession = () => {
+const GraphicSession = ({userId}) => {
 
-    const { data } = useUserSession('12')
+    const { data } = useUserSession(userId)
 
     return (
 

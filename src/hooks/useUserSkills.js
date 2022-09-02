@@ -8,8 +8,8 @@ const getUserSkills = async (userId) => {
     return data
 }
 
-export default function useUserActivity(idUser) {
-    return useQuery(['userSKills'], () => getUserSkills(idUser),
+export default function useUserSkills(userId) {
+    return useQuery([`userSkills-${userId}`], () => getUserSkills(userId),
 
         {
             select: data => {

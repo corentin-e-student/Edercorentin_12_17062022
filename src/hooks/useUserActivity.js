@@ -8,6 +8,6 @@ const getUserActivity = async (userId) => {
     return data
 }
 
-export default function useUserActivity(idUser) {
-    return useQuery(['userActivity'], () => getUserActivity(idUser))
+export default function useUserActivity(userId) {
+    return useQuery([`userActivity-${userId}`], () => getUserActivity(userId))
 }

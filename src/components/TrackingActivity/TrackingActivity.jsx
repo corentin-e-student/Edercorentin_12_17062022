@@ -25,11 +25,11 @@ const TrackingActivity = ({userId}) => {
                     <label className="tracking_message">Félicitation ! Vous avez explosé vos objectifs hier 👏</label>
                     <div className="tracking_items_position">
                         <div className="tracking_graphic_items_position_column">
-                            <GraphicActivity/>
+                            <GraphicActivity userId={userId}/>
                             <div className="tracking_graphic_items_position_row">
-                                <GraphicSession/>
-                                <GraphicSkills/>
-                                <GraphicObjectif/>
+                                <GraphicSession userId={userId}/>
+                                <GraphicSkills userId={userId}/>
+                                <GraphicObjectif userId={userId}/>
                             </div>
                         </div>
                         <div className="tracking_scoring_items_position">
