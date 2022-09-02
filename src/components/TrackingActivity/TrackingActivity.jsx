@@ -16,7 +16,7 @@ import PropTypes from 'prop-types';
 
 const TrackingActivity = ({userId}) => {
 
-    const { data, isSuccess } = useUser('12')
+    const { data, isSuccess } = useUser(userId)
     return (
         <div>
             {isSuccess &&
