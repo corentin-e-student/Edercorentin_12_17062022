@@ -11,7 +11,7 @@ import PropTypes from 'prop-types';
 import './layout.css'
 
 /**
- * Represents graphic skills.
+ * Represents dashboard with charts.
  * @param {Object} children - TrakingActivity of dashboard.
  * @returns {JSX}
  */
