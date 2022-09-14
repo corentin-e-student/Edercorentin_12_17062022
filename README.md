@@ -9,7 +9,7 @@ To start this project, you are free to use Docker or not. In this documentation,
 ## 2. Prerequisites
 
 I advise : 
-- [Yarn](https://yarnpkg.com/) for more zease of use
+- [Yarn](https://yarnpkg.com/) for more ease of use
 
 Or :
 - [NodeJS (**version 12.18**)](https://nodejs.org/en/) but be careful you need to change the version of NodJS to "12.18". Actualy the last version of NodJS is "16.16". If you are working with several versions of NodeJS, we recommend you install [nvm](https://github.com/nvm-sh/nvm). However this tool is not optimized I find.
