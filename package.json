@@ -22,11 +22,11 @@
     "yarn": "^1.22.19"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "predeploy": "yarn run build",
     "test": "react-scripts test",
-    "deploy": "gh-pages -b master -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
